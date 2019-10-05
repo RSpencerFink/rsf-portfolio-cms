@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/digitals",
+      "handler": "Digital.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/digitals/count",
+      "handler": "Digital.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/digitals/:id",
+      "handler": "Digital.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/digitals",
+      "handler": "Digital.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/digitals/:id",
+      "handler": "Digital.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/digitals/:id",
+      "handler": "Digital.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

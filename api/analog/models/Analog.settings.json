@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "analogs",
+  "info": {
+    "name": "analog",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "description": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "digitals",
+  "info": {
+    "name": "digital",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "video": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}
